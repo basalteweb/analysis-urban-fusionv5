@@ -1,0 +1,26 @@
+ANALYSIS POWER 5.0 — RAPPORT DE VALIDATION
+
+Contrôles exécutés avant livraison :
+- test_public_context.py : OK
+- test_causal_context.js : OK
+- test_power_causality.js : OK
+- syntaxe JavaScript js/*.js + sw.js : OK
+- compilation Python scripts/*.py : OK
+- validation data/public-context.json : OK
+- contrôle HTML : aucun ID dupliqué, aucune ressource locale référencée manquante
+- routage Power Lens Tickets / Panier : OK
+
+Régression sur les extractions TGM de référence (données non incluses dans le paquet) :
+- Clients lus : 1 341
+- Lignes de ventes : 15 446
+- Transactions reconstruites : 5 668
+- Références catalogue lues : 1 077
+- Diagnostics générés : 41
+- Actions prioritaires générées : 12
+- Diagnostics causaux testés : 38
+- Causes externes visibles sur ce jeu : 0
+- Hypothèses causales faibles/rejetées : 5
+
+Point de contrôle critique : le moteur n’a pas attribué artificiellement les baisses produit aux travaux publics présents dans le contexte. Il préfère 0 cause visible à une cause insuffisamment étayée.
+
+Limite de validation : l’environnement d’exécution utilisé pour cette livraison bloque l’ouverture automatisée de pages locales dans Chromium par politique d’organisation. Le rendu navigateur n’a donc pas fait l’objet d’une capture E2E automatisée dans cet environnement ; la structure HTML, les assets, les moteurs, les imports et les calculs ont été vérifiés séparément.

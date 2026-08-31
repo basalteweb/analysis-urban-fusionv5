@@ -1,0 +1,20 @@
+Analysis Power — Basalte-Web
+Version: 5.0.0 POWER
+Build: POWER DECISION INTELLIGENCE
+
+Base technique conservée : Analysis Ultimate 4.0 Urban Fusion.
+
+Ajouts majeurs v5 :
+- Cockpit Power : situation + Power Score + trois priorités ;
+- règle d’interface Constat → Pourquoi → Solution → Preuves ;
+- Power Lens sur KPI, avec contexte spécifique client/produit ;
+- moteur causal strict : seules les causes réellement retenues sont montrées ;
+- hypothèses rejetées confinées à Audit & preuves ;
+- anti-faux-positif travaux / accès ;
+- source officielle, descriptif/extrait officiel et traçabilité des événements retenus ;
+- Local Context Engine : profil commerce, géocodage officiel et rayons ;
+- recalcul immédiat du contexte après changement d’adresse ;
+- design premium responsive entièrement repensé ;
+- tests causaux intégrés à GitHub Actions.
+
+Confidentialité : les extractions TGM restent dans le navigateur.
